@@ -13,7 +13,7 @@ Valid Login
 
 *** Keywords ***
 Open Browser To Login Page
-    Open Browser    ${BASE_URL}    chrome
+    Open Browser    ${BASE_URL}    chrome    executable_path=/opt/google/chrome/chrome
     Input Text    id=lst-ib    ${search_term}
     Press Keys    id=lst-ib    Enter
     Sleep    5s  # Wait for search results to load
